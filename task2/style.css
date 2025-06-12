@@ -1,0 +1,65 @@
+/* Reset and base styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, rgb(103, 162, 103), #fffde7);
+  margin: 0;
+  padding: 20px;
+
+}
+
+/* Heading */
+h1 {
+  color: rgb(73, 73, 137);
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Notes container */
+#notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Note box and + box shared styles */
+.note {
+  background-color: transparent;
+  border-radius: 12px;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.2s ease;
+  padding: 10px;
+}
+
+/* Hover animation */
+.note:hover {
+  transform: scale(1.05);
+}
+
+/* + box style */
+.plus-box {
+  font-size: 50px;
+  font-weight: bold;
+  color: #030303;
+  cursor: pointer;
+}
+
+/* Note textarea styling */
+textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
